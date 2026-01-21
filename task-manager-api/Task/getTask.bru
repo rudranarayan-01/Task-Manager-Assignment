@@ -1,0 +1,21 @@
+meta {
+  name: getTask
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3001/tasks?search=first&page=1&limit=5
+  body: none
+  auth: bearer
+}
+
+params:query {
+  search: first
+  page: 1
+  limit: 5
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJjbWttb3J4b3YwMDAwMTEyMHc1OGM5dndsIiwiaWF0IjoxNzY4OTI2NDY3LCJleHAiOjE3Njg5MjczNjd9.vwN46zDSLQ0ofOBA1MSocnNblzDTYFzUWrHPYHBWZFo
+}
